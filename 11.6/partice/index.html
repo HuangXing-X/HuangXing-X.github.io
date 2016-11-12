@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="btn1">yo</button>
+	<button class="btn2">ho</button>
+	<button class="btn3">~</button>
+	<ul class="list"></ul>
+
+	<script src="jquery.js"></script>
+	<script>
+		$(".btn1").click(function(){
+			$.ajax({
+				url:"/getdata",
+				type:"get"
+			}).done(function(data){
+				alert(data)
+			})	
+		})
+
+		var animal=["cat","dog","fish"];
+		for(var i=0;i<animal.length;i++){
+			var li=$("<li>");
+			li.text(animal[i]);
+			$(".list").append(li) ;
+		}
+
+		$(".btn2").click(function(){
+			$.ajax({
+				url:"/add",
+				type:"get"
+			}).done(function(data){
+				for(var i=0;i<zoo.length;i++){
+					var li=$("<li>");
+					li.text(zoo[i]);
+					$(".list").append(li);
+				}
+			})
+		})
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<input type="text" id="txt">
+	<button id="btn">添加</button>
+	<ul id="list">
+		<li class="cat">猫</li>
+		<li class="dog">狗</li>
+		<li class="pig">猪</li>
+	</ul>
+
+	<script>
+		var oTxt=document.getElementById("txt");
+		var oBtn=document.getElementById("btn");
+		var oList=document.getElementById("list");
+		var oLi=document.querySelectorAll("#list li")
+
+		
+
+		oBtn.onclick=function(){
+			var value=oTxt.value;
+			var oLi=document.createElement("li");
+			var txt=document.createTextNode(value);
+			oLi.appendChild(txt);
+			oList.appendChild(oLi);
+		}
+
+		oList.onclick=function(event){
+			if(event.target.tagName==="LI"){
+				this.removeChild(event.target)
+			}
+		}
+	</script>
+</body>
+</html>

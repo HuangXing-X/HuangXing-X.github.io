@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btn1">yoho~</button>
+	<button id="btn2">yoho~</button>
+
+	<ul ></ul>
+	<script src="jquery.js"></script>
+	<script>
+		$("#btn1").click(function(){
+			$.ajax({
+				url:"/getdata",
+				type:"get"
+			}).done(function(data){
+				alert(data);
+			})
+		})
+//点击按钮显示。。后台。。
+		
+		// var fruit=["apple","banana","group"];
+		// for(var i=0;i<fruit.length;i++){
+		// 	var li=$("<li>");
+		// 	li.text(fruit[i]);
+		// 	$("ul").append(li);	
+		// }
+//在列表中添加数据
+			
+		$("#btn2").click(function(){
+			$.ajax({
+				url:"/list",
+				type:"get"
+			}).done(function(data){
+				for(var i=0;i<data.length;i++){
+					var li=$("<li>");
+					li.text(data[i]);
+					$("ul").append(li);	
+				}
+			})
+		})
+			
+
+			
+	</script>
+</body>
+</html>

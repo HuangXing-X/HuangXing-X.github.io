@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li class="cat">猫</li>
+		<li class="dog">狗</li>
+		<li class="pig">猪</li>
+	</ul>
+
+	<script>
+
+		var oLi=document.querySelector("ul");
+		oLi.onclick=function(event){
+			console.log(event.target.className)
+		}
+
+	</script>
+</body>
+</html>

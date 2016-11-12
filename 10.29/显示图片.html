@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" class="txt">
+	<input type="button" value="添加图片" class="btn">
+	<div class="pic"></div>
+	<script src="jquery.js"></script>
+	<script>
+		$(".btn").click(function(){
+			var value=$(".txt").val();
+			var img=$("<img>");
+			img.attr("src",value)
+			$(".pic").append(img);
+		})
+	</script>
+</body>
+</html>

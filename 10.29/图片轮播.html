@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width: 650px;
+			overflow: hidden;
+		}
+		.box ul {
+			width: 3250px;
+		}
+		.box ul li{
+			float:left;
+			list-style: none;
+		}
+		.numList li{
+			float:left;
+			list-style: none;
+			line-height: 20px;
+			height:20px;
+			width: 20px;
+			text-align: center;
+			border: 1px solid #000;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+		</ul>
+	</div>
+	<ul class="numList">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<script src="jquery.js"></script>
+	<script>
+		var n=0;
+		function turnPic(){
+			n++;
+			n=n===5?0:n;
+		
+			$(".box ul").animate({
+				"margin-left":-650*n
+			},1000)
+		}
+
+
+		$(".numList li").mouseenter(
+			function(){
+				clearInterval(t);
+			}).mouseleave(
+			function(){
+				t=setInterval(turnPic,1000);
+			}).click(function(){
+				var index=$(this).index();
+				n=index;
+				$(".box ul").animate({
+					"margin-left":-650*index
+				},1000);
+			})
+		var t=setInterval(turnPic,3000)
+	</script>
+</body>
+</html>

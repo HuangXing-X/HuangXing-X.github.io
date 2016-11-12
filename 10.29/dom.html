@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		li{
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" class="txt">
+	<input type="button" value="添加" class="btn">
+	<input type="button" value="修改" class="xiu">
+	<ul class="list">
+		<li>apple</li>
+		<li>banana</li>
+		<li>pear</li>
+	</ul>
+
+	<script src="jquery.js"></script>
+	<script>
+		$(".btn").click(function(){
+			var value=$(".txt").val();
+			var li=$("<li>")
+			li.text(value);
+			$(".list").append(li);
+			$(".txt").val("");
+		})
+
+		var elem=null;
+		$(".list li").click(function(){
+			elem=$(this);
+		})
+		$(".xiu").click(function(){
+			var value=$(".txt").val();
+			elem.text(value);
+		})
+	</script>
+</body>
+</html>
