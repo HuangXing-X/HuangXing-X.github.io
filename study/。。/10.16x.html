@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+		}
+		.nav li{
+			float: left;
+			list-style: none;
+			height:50px;
+			width: 100px;
+			line-height: 50px;
+			text-align: center;
+			cursor: pointer;
+			border: 1px solid #000;
+		}
+		.clear{
+			clear:both;
+		}
+		#box div{
+			width: 304px;
+			height: 300px;
+			border: 1px solid #000;
+			display:none;
+			border:1px solid #000;
+		}
+		#box .active{
+			display: block;
+		}
+
+
+		
+	</style>
+</head>
+<body>
+
+	<ul class="nav">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	<div class="clear"></div>
+	<div id="box">
+		<div class="box1">
+			<h2>标签1</h2>
+		</div>
+		<div class="box2 active">
+			<h2>标签2</h2>
+		</div>
+		<div class="box3">
+			<h2>标签3</h2>
+		</div>
+	</div>
+	<script src="jquery.js"></script>
+	<script>
+		$(".nav li").click(function(){
+			var index=$(this).index();
+			console.log(index);
+			$("#box div").eq(index).addClass("active").siblings("div").removeClass("active");
+		})
+	</script>
+
+
+
+
+</body>
+</html>

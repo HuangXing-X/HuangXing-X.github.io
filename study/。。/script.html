@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		alert("hello world!!")
+	</script>
+	<style type="text/css">
+		.div{
+			height:100px;
+			width: 100px;
+			background-color: #0f0;
+		}
+		li{
+			float: left;
+			text-align: center;
+			list-style: none;
+			border: 1px solid #000;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="div"></div>
+
+	<script src="jquery.js"></script>
+	<script>
+		$(".div").click(function()
+			{
+				$(this).css({"background-color":"#00f","height":"200px","width":"200px"});
+			});		
+	</script>
+	<script type="text/javascript">
+		console.log("123456");
+	</script>
+
+
+
+	<img class="pic" src="images/1.jpg" alt="">
+	<script>
+		$(".pic").click(function(){
+			$(this).attr({"src":"images/0.jpg"});
+		});
+	</script>
+
+	<input class="exchange" type="button" value="切换">;
+	<img class="pic1"src="images/2.jpg" alt="">;
+	<script>
+		$(".exchange").click(function(){
+			$(".pic1").attr({"src":"images/3.jpg"});
+		});
+	</script>
+
+	<ul>
+		<li class="1">1</li>
+		<li class="2">2</li>
+		<li class="3">3</li>
+		<li class="4">4</li>
+		<li class="5">5</li>
+	</ul>
+	<img src="images/0.jpg" alt="" class="pic2">
+	<script>
+		$(".1").click(function(){
+			$(".pic2").attr("src","images/0.jpg")
+		})
+	</script>
+	<script>
+		$(".2").click(function(){
+			$(".pic2").attr("src","images/1.jpg")
+		})
+	</script>
+	<script>
+		$(".3").click(function(){
+			$(".pic2").attr("src","images/2.jpg")
+		})
+	</script>	
+	<script>
+		$(".4").click(function(){
+			$(".pic2").attr("src","images/3.jpg")
+		})
+	</script>	<script>
+		$(".5").click(function(){
+			$(".pic2").attr("src","images/4.jpg")
+		})
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		.box1{
+			width: 200px;
+			height: 200px;
+			background-color: #0ff;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<input type="button" value="显示" class="show">
+	<input type="button" value="隐藏" class="hide">
+	<input type="button" value="下拉" class="slideDown">
+	<input type="button" value="上卷" class="slideUp">
+	<input type="button" value="渐入" class="fadeIn">
+	<input type="button" value="渐出" class="fadeOut">
+	<input type="button" value="切换显示隐藏" class="toggle">
+	<input type="button" value="切换下拉上卷" class="slideToggle">
+	<input type="button" value="切换渐入渐出" class="fadeToggle">
+	<input type="button" value="自定义" class="animate">
+	<div class="box1"></div>
+	<script src="jquery.js"></script>
+	<script>
+		$(".show").click(function(){
+			$(".box1").show();
+		});
+		$(".hide").click(function(){
+			$(".box1").hide();
+		});
+		$(".slideDown").click(function(){
+			$(".box1").slideDown();
+		});
+		$(".slideUp").click(function(){
+			$(".box1").slideUp();
+		});
+		$(".fadeIn").click(function(){
+			$(".box1").fadeIn();
+		});
+		$(".fadeOut").click(function(){
+			$(".box1").fadeOut();
+		});
+		$(".toggle").click(function(){
+			$(".box1").toggle();
+		});
+		$(".slideToggle").click(function(){
+			$(".box1").slideToggle();
+		});
+		$(".fadeToggle").click(function(){
+			$(".box1").fadeToggle();
+		});
+		$(".animate").click(function(){
+			$(".box1").animate({"margin-top":"500px"},500);
+		});
+	</script>
+
+</body>
+</html>

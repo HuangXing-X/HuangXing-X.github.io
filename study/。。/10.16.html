@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.one li{
+			float: left;
+			list-style: none;
+			text-align: center;
+			cursor: pointer;
+			border: 1px solid #000;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+		}
+		div{
+			width: 200px;
+			height:200px;
+			border:1px solid #000;
+			float: left;
+			margin-left: 20px;
+		}
+		.active{
+			background-color: #0d0;
+		}
+
+	</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		var one="123";
+		console.log(one);
+	</script>
+
+
+
+	<script>
+		var nameList=["zero","one","two","three"];
+		console.log(nameList[0])
+	</script>
+
+
+
+
+
+
+
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+	<script>
+		$("div").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	</script>
+
+
+
+
+
+
+	<img src="images/7.jpg" class="pic" alt="">
+	<ul class="one">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+	<script src="jquery.js"></script>
+	<script>
+		var cSrc=[
+			"images/6.jpg",
+			"images/5.jpg",
+			"images/4.jpg",
+			"images/3.jpg",
+			"images/2.jpg",
+			"images/1.jpg",
+		]
+		$(".one li").click(function(){
+			var index=$(this).index();
+			var src=cSrc[index];
+			console.log("src")
+			$(".pic").attr("src",src);
+			$(this).addClass("active").siblings().removeClass("active");
+
+		})
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

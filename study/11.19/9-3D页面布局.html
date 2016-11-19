@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			perspective:500px;
+		}
+		.big-box{
+			width: 200px;
+			margin:100px auto;
+			position:relative;
+			transform-style:preserve-3d;
+			transition:transform 4s;
+			transform-origin:100px 100px;
+		}
+		.small-box{
+			position: absolute;
+			top:0px;
+			left:0px;
+		}
+		
+		.box1{
+			transform:translateZ(100px);
+		}
+		.box2{
+			transform:rotateY(90deg) translateZ(100px);
+		}	
+		.box3{
+			transform:translateZ(-100px);
+		}
+		.box4{
+			transform:rotateY(90deg) translateZ(-100px);
+		}
+		.box5{
+			transform:rotateX(90deg) translateZ(100px);
+		}
+		.box6{
+			transform:rotateX(90deg) translateZ(-100px);
+		}
+
+
+
+		.active{
+			transform:rotateY(360deg) rotateX(360deg);
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="big-box">
+		<div class="small-box box1">
+			<img src="img/1.jpg" alt="">
+		</div>
+		<div class="small-box box2">
+			<img src="img/2.jpg" alt="">
+		</div>
+		<div class="small-box box3">
+			<img src="img/3.jpg" alt="">
+		</div>
+		<div class="small-box box4">
+			<img src="img/4.jpg" alt="">
+		</div>
+		<div class="small-box box5">
+			<img src="img/5.jpg" alt="">
+		</div>
+		<div class="small-box box6">
+			<img src="img/6.jpg" alt="">
+		</div>
+	</div>
+
+
+
+	<script src="jquery.js"></script>
+	<script>
+		$(".big-box").click(function(){
+			$(this).toggleClass("active")
+		})
+	</script>
+</body>
+</html>
