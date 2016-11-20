@@ -1,0 +1,317 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.header{
+	
+	height: 590px;
+}
+.top{
+	border-bottom: 1px solid #000;
+}
+.top-center{
+	height: 39px;
+	width: 1000px;
+	margin: 0 auto;
+    
+}
+.header .top{
+	height: 39px;
+	
+}
+.header .t-left span{
+    float:left;
+    font-size: 12px;
+    margin-top: 14px;
+
+}
+.header .t-left a{
+    float:left;
+    font-size: 12px;
+    margin-top: 14px;
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+}
+.header .t-left p{
+    float:right;
+    font-size: 12px;
+    margin-top: 14px;
+}
+.header .logo{
+	height: 100px;
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.header .logo .tp img{
+	
+	float:left;
+	
+    margin-top: 21px;
+}
+.header .logo .tp p{
+    float:left;
+    margin-left: 11px;
+    margin-top: 76px;
+    font-size: 12px;
+}
+.header .logo .tu img{
+	float: right;
+	margin-top: 30px;
+}
+.header .logo .tu p{
+	font-size: 12px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 80px;
+}
+.header .search{
+	height: 43px;
+	width: 1000px;
+	margin: 0 auto;
+	
+}
+.header .search ul li{
+	float:left;
+	list-style: none;
+	margin-left: 60px;
+	line-height: 43px;
+}
+.header .nav{
+	height: 403px;
+	width: 1920px;
+	border: 1px solid black;
+}
+.banner{
+	height: 1943px;
+	width: 1000px;
+	
+	margin:0 auto;
+}
+
+.banner .top img{
+	height: 600px;
+	width: 1000px;
+	
+}
+.banner .top p{
+	margin-top: 25px;
+	margin-bottom: 41px ；
+}
+.banner .cheng {
+	height: 605px;
+	width: 1000px;
+	
+}
+.banner .cheng p{
+	height: 24px;
+	width: 1000px;
+	
+	margin-bottom: 0px;
+}
+.banner .cheng img{
+	height: 200px;
+	width: 200px;
+	
+	float:left;
+	float:left;
+	margin-top: 60px;
+	margin-left: 30px;
+}
+.banner .shi{
+	height: 550px;
+	width: 1000px;
+	
+}
+.banner .shi p{
+	
+	height: 25px;
+	width: 1000px;
+}
+.banner .shi img{
+	
+	height: 605px;
+	width: 1000px ;
+}
+.cantainer{
+	height: 1840px;
+	width:1000px;
+	
+	margin: 0 auto;
+}
+.cantainer .jian p{
+	height: 21px;
+	width:1000px;
+	
+}
+.cantainer .jian img{
+	height: 619px;
+	width:1000px;
+	
+}
+.cantainer .jin{
+	height: 841px;
+	width:1000px;
+	
+	
+}
+.cantainer .jin p{
+	height: 22px;
+	width:1000px;
+	
+}
+.cantainer .jin  img{
+	height: 819px;
+	width:1000px;
+	
+	float:left;
+}
+.cantainer .ti{
+	height: 240px;
+	width:1000px;
+	
+}
+.cantainer .ti p{
+	height: 27px;
+	width:1000px;
+	
+}
+.cantainer .ti img {
+	height: 200px;
+	width:200px;
+	
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.cantainer .zi{
+	height: 93px;
+	width:1000px;
+	
+}
+.cantainer .yi ul li{
+	height: 34px;
+	width:200px;
+	
+	float: left;
+	margin-left: 40px;
+	list-style: none;
+	background-color: #f6f6f6;
+}
+.cantainer .hang ul li{
+	height: 52px;
+	width:200px;
+	
+	float: left;
+	margin-left: 40px;
+	list-style: none;
+	background-color: #f6f6f6;
+}
+.footer .tu{
+	height: 110px;
+	width:1000px;
+	
+	margin-left: 40px;
+	margin:0 auto;
+}
+.footer .tu img{
+	float: left;
+	margin-left: 110px;
+	
+}
+.footer .yi{
+	margin:0 auto;
+    height: 15px;
+	width:1000px;
+	
+	margin-left: 110px;
+	margin:0 auto;
+}
+.footer .yi ul li{
+	height: 15px;
+	width:150px;
+	
+	float: left;
+    margin-left: 85px;
+	list-style: none;
+	line-height: 31px;
+}
+.footer .er{
+	margin:0 auto;
+    height: 24px;
+	width:1000px;
+	margin-top: 10px;
+	margin-left: 400px;
+	
+}
+.footer .er ul li{
+	height: 24px;
+	width:150px;
+	
+	float:left;
+    margin-left: 200px;
+	list-style: none;
+	line-height: 24px;
+    margin:0 auto;
+}
+.footer .center{
+	height: 96px;
+	width:1920px;
+	
+	margin:0 auto;
+	margin-top: 60px;
+}
+.footer .center  .a{
+	list-style: none;
+	margin-left: 160px;
+    float: left;
+	height: 96px;
+	
+}
+.footer .center .b{
+	list-style: none;
+	margin-left: 160px;
+    float: left;
+	height: 96px;
+	
+}
+.footer .center .c{
+	list-style: none;
+	margin-left: 160px;
+    float: left;
+	height: 96px;
+	
+}
+.footer .center .d{
+	list-style: none;
+	margin-left: 160px;
+    float: left;
+	height: 96px;
+	
+}
+.footer .center .e{
+	list-style: none;
+	margin-left: 160px;
+    float: left;
+	height: 96px;
+	
+}
+.footer .center img{
+	list-style: none;
+	margin-left: 160px;
+    float: left;
+	height: 96px;
+	
+}
+.footer .bottom{
+	height: 148px;
+	width: 1920px;
+	background-color: #f6f6f6;
+}
+	
+.footer .bottom p{
+	margin-top: 30px;
+	margin-left: 400px;
+	line-height: 30px;
+}
