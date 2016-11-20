@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@keyframes changeColor{
+		/*定义动画 动画名*/
+			0%{
+				background-color: #00f;
+				transform:rotate(0deg);
+			}
+			50%{
+				background-color: #0f0;
+				transform:rotate(360deg);
+			}
+			100%{
+				background-color: #00f;
+				transform:rotate(720deg);
+			}
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: #00f;
+			margin:100px auto;
+		}
+		.box:hover{
+			animation:changeColor 5s linear .5s infinite;
+			/*调用动画   linear:匀速     infinite一直转*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>

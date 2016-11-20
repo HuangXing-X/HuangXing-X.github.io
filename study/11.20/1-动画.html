@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@keyframes changeColor{
+		/*定义动画 动画名*/
+			from{/*从*/
+				background-color: #00f;
+				transform:rotate(0deg);
+			}
+			to{/*到*/
+				background-color: #0f0;
+				transform:rotate(360deg);
+
+			}
+		}
+		.box{
+			width: 200px;
+			height: 200px;
+			background-color: #00f;
+		}
+		.box:hover{
+			animation:changeColor 5s;
+			/*调用动画*/
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
