@@ -21,16 +21,28 @@
 			width:200px;
 			height:200px;
 			margin:100px auto;
+			border-radius: 50%;
+			overflow: hidden;
 		}
-		.box img{
+		img{
 			width:200px;
 			height:200px;
-			border-radius: 50%;
+		}
+		.stop{
+			animation-play-state:paused;
+			/*暂停*/
 		}
 	</style>
 </head>
 <body>
-	<div class="box"><img src="1.jpg" alt=""></div>
-	
+	<div class="box">
+		<img src="1.jpg" alt="">
+	</div>
+	<script src="jquery.js"></script>
+	<script>
+		$(".box").click(function(){
+			$(this).toggleClass("stop")
+		})
+	</script>
 </body>
 </html>

@@ -3,8 +3,84 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		body{
+			background-color: #666;
+		}
+		@keyframes ship{
+			0%{
+				transform:rotate(0deg);
+			}
+			25%{
+				transform:rotate(10deg);
+			}
+			100%{
+				transform:rotate(0deg);
+			}
+
+		}
+		@keyframes wave{
+			0%{
+				transform:translateX(0);
+			}
+			25%{
+				transform:translateX(-100PX);
+			}
+			100%{
+				transform:translateX(0PX);
+			}
+
+		}
+		.box{
+			width:1000px;
+			height:700px;
+			margin:20px auto;
+			background-color: #fff;
+			background-image:url(bg.png);
+			background-repeat: no-repeat;
+			overflow: hidden;
+			position:relative;
+		}
+		.ship{
+			position:absolute;
+			top:20px;
+			left:100px;
+			animation:ship 5s infinite;
+		}
+		.wave1{
+			position: absolute;
+			bottom:0;
+			left:0;
+			animation:wave 9s infinite;
+			z-index: 999;
+		}
+		.wave2{
+			position: absolute;
+			bottom:30px;
+			left:0;
+			animation:wave 7s infinite;
+			z-index: 99;
+		}
+		.wave3{
+			position: absolute;
+			bottom:60px;
+			left:0;
+			animation:wave 5s infinite;
+			z-index: 9;
+		}
+
+	</style>
 </head>
 <body>
-	
+	<div class="box">
+		<img class="ship" src="ship.png">
+		<img class="wave1" src="wave1.png">
+		<img class="wave2" src="wave2.png">
+		<img class="wave3" src="wave3.png">
+	</div>	
 </body>
 </html>
